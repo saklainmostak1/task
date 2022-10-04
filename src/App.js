@@ -1,13 +1,13 @@
+import { Button, Spinner } from 'react-bootstrap';
 import './App.css';
-import CardGroup from './components/CardGroup/CardGroup';
+import GridCard from './components/GridCard/GridCard';
 
 function App() {
   return (
     <div className="App">
-<div className="spinner-border text-danger" role="status">
-  <span className="visually-hidden">Loading...</span>
-</div>
-<CardGroup></CardGroup>
+      <Button variant='danger'>My Button</Button>
+      <Spinner animation="grow" variant="info" />
+      <GridCard></GridCard>
     </div>
   );
 }
